@@ -3,38 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>latakiano All Play | ألعاب الربح السريع</title>
+    <title>Latakiano All Play | عالم الألعاب والربح</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0b0c10; color: #66fcf1; margin: 0; padding: 0; }
-        header { background: #1f2833; padding: 20px; text-align: center; border-bottom: 2px solid #66fcf1; }
-        .main-game { width: 95%; max-width: 900px; height: 500px; margin: 20px auto; border: 3px solid #45a29e; border-radius: 15px; overflow: hidden; }
-        .game-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; padding: 20px; }
-        .card { background: #1f2833; border-radius: 10px; padding: 10px; text-align: center; cursor: pointer; transition: 0.3s; border: 1px solid #45a29e; }
-        .card:hover { transform: translateY(-5px); background: #45a29e; color: black; }
-        .card img { width: 100%; border-radius: 8px; }
+        /* تصميم عصري واحترافي */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0b0c10; color: #66fcf1; margin: 0; padding: 0; text-align: center; }
+        header { background: #1f2833; padding: 25px; border-bottom: 3px solid #e94560; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .logo { font-size: 32px; font-weight: bold; color: #e94560; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px #000; }
+        .tagline { color: #45a29e; font-size: 14px; margin-top: 5px; }
+        
+        /* مكان اللعبة الرئيسية */
+        .main-game-area { width: 95%; max-width: 900px; height: 500px; margin: 20px auto; border: 3px solid #45a29e; border-radius: 15px; overflow: hidden; background: #000; box-shadow: 0 0 25px rgba(102, 252, 241, 0.3); }
         iframe { width: 100%; height: 100%; border: none; }
+
+        /* شبكة الألعاب الأخرى */
+        .game-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; padding: 20px; max-width: 1000px; margin: 0 auto; }
+        .card { background: #1f2833; border-radius: 12px; padding: 10px; cursor: pointer; transition: 0.3s; border: 1px solid #45a29e; }
+        .card:hover { transform: translateY(-8px); background: #e94560; color: white; border-color: #fff; }
+        .card img { width: 100%; border-radius: 8px; margin-bottom: 8px; }
+        .card p { margin: 0; font-weight: bold; font-size: 14px; }
+
+        .footer { padding: 30px; font-size: 12px; color: #45a29e; border-top: 1px solid #1f2833; margin-top: 20px; }
+        
+        /* تنبيه بسيط للمستخدم */
+        .ad-placeholder { background: #1a1a1a; color: #555; padding: 10px; margin: 10px auto; width: 90%; max-width: 728px; border: 1px dashed #333; font-size: 12px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Latakiano All Play 🎮</h1>
-    <p>ألعاب عالمية - متعة بلا حدود - تحدى أصدقاءك</p>
+    <div class="logo">Latakiano All Play</div>
+    <div class="tagline">أفضل منصة للألعاب الاحترافية والذكاء</div>
 </header>
 
-<div class="main-game">
-    <iframe src="https://www.gamepix.com/live/8-ball-billiards-classic"></iframe>
+<div class="ad-placeholder">مساحة إعلانات الربح (سأعلمك كيف تضع الكود الحقيقي هنا لاحقاً)</div>
+
+<div class="main-game-area">
+    <iframe id="gameFrame" src="https://www.gamepix.com/live/8-ball-billiards-classic" allowfullscreen></iframe>
 </div>
 
-<h2 style="text-align:center;">اختر لعبتك المفضلة وابدأ الربح</h2>
+<h2 style="margin-top: 30px; color: #fff;">اختر لعبتك المفضلة الآن</h2>
 
 <div class="game-grid">
+    <div class="card" onclick="changeGame('8-ball-billiards-classic')">
+        <img src="https://img.gamepix.com/games/8-ball-billiards-classic/icon/8-ball-billiards-classic.png" alt="بلياردو">
+        <p>بلياردو 8 Ball</p>
+    </div>
     <div class="card" onclick="changeGame('chess-grandmaster')">
-        <img src="https://img.gamepix.com/games/chess-grandmaster/icon/chess-grandmaster.png">
+        <img src="https://img.gamepix.com/games/chess-grandmaster/icon/chess-grandmaster.png" alt="شطرنج">
         <p>شطرنج المحترفين</p>
     </div>
     <div class="card" onclick="changeGame('classic-solitaire')">
-        <img src="https://img.gamepix.com/games/classic-solitaire/icon/classic-solitaire.png">
+        <img src="https://img.gamepix.com/games/classic-solitaire/icon/classic-solitaire.png" alt="سوليتير">
+        <p>سوليتير الملك</p>
+    </div>
+    <div class="card" onclick="changeGame('jewel-academy')">
+        <img src="https://img.gamepix.com/games/jewel-academy/icon/jewel-academy.png" alt="مجوهرات">
+        <p>مجوهرات الأذكياء</p>
+    </div>
+    <div class="card" onclick="changeGame('table-tennis-world-tour')">
+        <img src="https://img.gamepix.com/games/table-tennis-world-tour/icon/table-tennis-world-tour.png" alt="تنس">
+        <p>بطولة التنس</p>
+    </div>
+    <div class="card" onclick="changeGame('tower-crash')">
+        <img src="https://img.gamepix.com/games/tower-crash/icon/tower-crash.png" alt="برج">
+        <p>تحطيم البرج</p>
+    </div>
+</div>
+
+<div class="footer">
+    © 2025 Latakiano All Play | جميع الحقوق محفوظة<br>
+    بوابة الألعاب الأسرع انتشاراً في الوطن        <img src="https://img.gamepix.com/games/classic-solitaire/icon/classic-solitaire.png">
         <p>سوليتير الكلاسيكية</p>
     </div>
     <div class="card" onclick="changeGame('jewel-academy')">
