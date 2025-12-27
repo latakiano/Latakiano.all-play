@@ -72,6 +72,58 @@
 
 <div class="footer">
     © 2025 Latakiano All Play | جميع الحقوق محفوظة<br>
+    بوابة الألعاب الأسرع انتشاراً في الوطن العربي
+</div>
+
+<script>
+    // وظيفة تبديل الألعاب داخل نفس الصفحة
+    function changeGame(gameName) {
+        const frame = document.getElementById('gameFrame');
+        frame.src = `https://www.gamepix.com/live/${gameName}`;
+        // العودة لأعلى الصفحة لرؤية اللعبة
+        window.scrollTo({top: 100, behavior: 'smooth'});
+    }
+</script>
+
+</body>
+</html>
+<div class="ad-placeholder">مساحة إعلانات الربح (سأعلمك كيف تضع الكود الحقيقي هنا لاحقاً)</div>
+
+<div class="main-game-area">
+    <iframe id="gameFrame" src="https://www.gamepix.com/live/8-ball-billiards-classic" allowfullscreen></iframe>
+</div>
+
+<h2 style="margin-top: 30px; color: #fff;">اختر لعبتك المفضلة الآن</h2>
+
+<div class="game-grid">
+    <div class="card" onclick="changeGame('8-ball-billiards-classic')">
+        <img src="https://img.gamepix.com/games/8-ball-billiards-classic/icon/8-ball-billiards-classic.png" alt="بلياردو">
+        <p>بلياردو 8 Ball</p>
+    </div>
+    <div class="card" onclick="changeGame('chess-grandmaster')">
+        <img src="https://img.gamepix.com/games/chess-grandmaster/icon/chess-grandmaster.png" alt="شطرنج">
+        <p>شطرنج المحترفين</p>
+    </div>
+    <div class="card" onclick="changeGame('classic-solitaire')">
+        <img src="https://img.gamepix.com/games/classic-solitaire/icon/classic-solitaire.png" alt="سوليتير">
+        <p>سوليتير الملك</p>
+    </div>
+    <div class="card" onclick="changeGame('jewel-academy')">
+        <img src="https://img.gamepix.com/games/jewel-academy/icon/jewel-academy.png" alt="مجوهرات">
+        <p>مجوهرات الأذكياء</p>
+    </div>
+    <div class="card" onclick="changeGame('table-tennis-world-tour')">
+        <img src="https://img.gamepix.com/games/table-tennis-world-tour/icon/table-tennis-world-tour.png" alt="تنس">
+        <p>بطولة التنس</p>
+    </div>
+    <div class="card" onclick="changeGame('tower-crash')">
+        <img src="https://img.gamepix.com/games/tower-crash/icon/tower-crash.png" alt="برج">
+        <p>تحطيم البرج</p>
+    </div>
+</div>
+
+<div class="footer">
+    © 2025 Latakiano All Play | جميع الحقوق محفوظة<br>
     بوابة الألعاب الأسرع انتشاراً في الوطن        <img src="https://img.gamepix.com/games/classic-solitaire/icon/classic-solitaire.png">
         <p>سوليتير الكلاسيكية</p>
     </div>
